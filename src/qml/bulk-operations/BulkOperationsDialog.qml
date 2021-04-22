@@ -414,6 +414,7 @@ Dialog {
 
                         BusyIndicator { running: true }
                         BetterLabel {
+                            objectName: "rdm_bulk_operation_status"
                             text: {
                                 if (bulkOperations.operationProgress > 0)
                                     return qsTranslate("RDM","Processed: ") + bulkOperations.operationProgress
